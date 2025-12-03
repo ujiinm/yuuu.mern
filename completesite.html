@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color:inherit;
+        }
+        .topbar{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color:#fff;
+            padding: 10px 20px;
+        }
+        .title{
+            font size: 2.0rem;
+            font-weight: 600;
+        }
+        .date{
+            font-family: "Playfair Display", serif;
+            font-size: 1.2rem;
+        }
+        .navbar{
+            margin: 10px 20px;
+        }
+        .navbar nav ul{
+            display:flex;
+            list-style-type: none;
+            gap: 15px;
+            justify-content: center;
+            color:#444;
+            font-size: 1.2rem;
+        }
+        .navbar nav ul li a:hover{
+            color:red;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <div class="logo">
+                Techaxis
+            </div>
+            <div class="title">
+                Welcome to Techaxis
+            </div>
+            <div class="date">
+                Dec 3rd,2026
+            </div>
+            </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="completesite.html">Complete Site</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <aside> Related article, Sidebar. </aside>
+        <section>
+            <h2 style="text-align: center; color: gray;">About us</h2> <!-- Inline css -->
+            <p>This is about us section.</p>
+        </section>
+        <section>
+            <h2>Our Services</h2>
+            <p>This is our services section.</p>
+            <ul>
+                <li>Web Development</li>
+                <li>App Development</li>
+                <li>Digital Marketing</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Our Products</h2>
+            <p>This is our products section.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>SN</th>
+                        <th>Product Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Laptop</td>
+                        <td>Dell XPS 15</td>
+                        <td>$1,299</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Smartphone</td>
+                        <td>iPhone 13</td>
+                        <td>$799</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Tablet</td>
+                        <td>iPad Pro</td>
+                        <td>$999</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2 style="text-align: center; color: gray;">Feedback</h2>
+            <p>This is feedback form.</p>
+            <form action="/" method="post"> <label for="name">Name:</label> <input type="text" id="name" name="name"
+                    required><br><br> <label for="email">Email:</label> <input type="email" id="email" name="email"
+                    required><br><br> <label for="message">Message:</label><br> <textarea id="message" name="message"
+                    rows="4" cols="50" required></textarea><br><br> <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+        <section style="width: auto;">
+            <h2>Gallery</h2>
+            <p>This is our gallery section.</p> <img src="images/nature.avif" height="200px" width="200px" />
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

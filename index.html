@@ -28,7 +28,7 @@
             font-family: 'Roboto Slab', serif;
             font-size: 1.2rem;
             line-height: 1.4;
-            margin-bottom: 15px;
+            margin-bottom: 15px; //specificity
         }
         img{
             object-fit: cover;
@@ -94,6 +94,15 @@
         <li>Bake for 10-12 minutes or until golden brown around the edges.</li>
         <li>Allow cookies to cool on the baking sheet for a few minutes before transferring to a wire rack to cool completely.</li>
     </ol>
+    <div>
+        specificity:
+        0,0,0
+        id selector>class selector>element selector
+        h2{
+            0,0,1
+        }
+        .ingredient
+    </div>
    
     <h2>Entire menu</h2>
         <li>Appetizers
