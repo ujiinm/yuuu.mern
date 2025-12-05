@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    *{
+        padding: 0;
+        margin:  0;
+    }
+    a{
+        text-decoration: none;
+        color:inherit
+    }
+    .topbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+    }
+
+    .Title {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    .navbar{
+        margin: 10px 20px;
+    }
+    .navbar nav ul{
+        display:flex;
+        list-style-type: none;
+        gap: 15px;
+        justify-content: center;
+        color:#444;
+        font-size: 1.6rem;
+    }
+    .navbar nav ul li a:hover
+    {
+        color:red;
+        text-decoration: underline;
+    }
+    .main{
+        margin:30px;
+        padding:20px;
+        font-size: 1.6rem;
+        display: flex;
+        gap:20px;
+        flex-wrap: wrap;
+    }
+    .col1{
+        flex-grow: 1.5;
+        padding: 10px;
+    }
+    .col2{
+        flex-grow: 4;
+        
+        padding: 10px;
+    }
+    .col3{
+        flex-grow:1.5;
+        
+        padding:10px;
+    }
+    section h5{
+        margin:0px;
+        font-size:1.4rem;
+    }
+    section p{
+        font-size:1.2rem;
+        line-height:1.4;
+        margin-bottom:15px;
+    }
+    ul{
+        margin-left:10px;
+    }
+    li{
+        font-size: 1.2rem;
+        margin-bottom: 4px;
+
+    }
+
+</style>
+
+<body>
+    <header>
+        <div class="topbar">
+            <div class="Title">
+                TECHAXIS SAMPLE PAGE
+            </div>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Features.html">Features</a></li>
+                    <li><a href="Pricing.html">Pricing</a></li>
+                    <li><a href="Testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="col1">
+            <h4>FEATURES</h4>
+            <section>
+                <h5>Feature 1 Heading</h5>
+                <p>This is a brief description of this feature.
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul> 
+                </p>  
+            </section>
+            <section>
+                <h5>Feature 2 Heading</h5>
+                <p>
+                This is a brief description of this feature.
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                    </p>
+        </div>
+        <div class="col2">
+            PRICING PLANS
+        </div>
+        <div class="col3">
+            TESTIMONIALS
+        </div>
+   
+    </main>
+
+</body>
+
+</html>

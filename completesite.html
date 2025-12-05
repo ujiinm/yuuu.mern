@@ -28,7 +28,7 @@
             padding: 10px 20px;
         }
         .title{
-            font size: 2.0rem;
+            font-size: 2.0rem;
             font-weight: 600;
         }
         .date{
@@ -49,6 +49,83 @@
         .navbar nav ul li a:hover{
             color:red;
             text-decoration: underline;
+        }
+        main{
+            padding:20px;
+            display: flex;
+            gap:20px;
+            flex-wrap: wrap;
+        }
+        aside{
+            flex-grow: 1;
+            border: 1px solid #ccc;
+            padding:10px;
+        }
+        .right-content{
+            flex-grow: 4;
+            border: 1px solid #ccc;
+            padding:10px;
+        }
+        section h2{
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            color:#333
+        }
+        section p{
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            line-height: 1.5;
+            color:#444;
+        }
+        ul{
+            margin-left: 20px;
+        }
+        ul li{
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+            color:#555;
+
+        }
+        table th,
+        table td{
+            font-size: 1.4rem;
+            padding:8px 12px;
+            border:1px solid #ccc;
+        }
+        input{
+            font-size: 1.6rem;
+            padding:8px;
+            margin-bottom: 10px;
+            width:100%;
+            border:1px solid #ccc;
+            border-radius: 4px;
+        }
+        label{
+            font-size: 1.6rem;
+            margin-bottom: 5px;
+            display: block;
+            color:#333
+        }
+        textarea{
+            font-size: 1.6rem;
+            padding:8px;
+            margin-bottom: 10px;
+            border:1px solid #ccc;
+            border-radius: 4px;
+            width:100%
+        }
+        button{
+            font-size: 1.2rem;
+            padding:10px 20px;
+            width:100%;
+            background-color: #007BFF;
+            color:#fff;
+            border:none;
+            border-radius: 4px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -80,9 +157,15 @@
         </div>
     </header>
     <main>
-        <aside> Related article, Sidebar. </aside>
+        <aside>
+             Related article, Sidebar.
+        </aside>
+
+        <div class="right-content">
+            <h1>Welcome to Our Complete Site</h1>
+            <p>This is a complete site example with various sections.</p>
         <section>
-            <h2 style="text-align: center; color: gray;">About us</h2> <!-- Inline css -->
+            <h2>About us</h2> <!-- Inline css -->
             <p>This is about us section.</p>
         </section>
         <section>
@@ -129,7 +212,7 @@
             </table>
         </section>
         <section>
-            <h2 style="text-align: center; color: gray;">Feedback</h2>
+            <h2>Feedback</h2>
             <p>This is feedback form.</p>
             <form action="/" method="post"> <label for="name">Name:</label> <input type="text" id="name" name="name"
                     required><br><br> <label for="email">Email:</label> <input type="email" id="email" name="email"
