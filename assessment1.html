@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<style>
+    *{
+        padding:0;
+        margin:0;
+    }
+    a{
+        text-decoration: none;
+        color:inherit;
+    }
+    .topbar{
+        background-color: #333;
+        color:#fff;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding:10px 20px;
+    }
+    .title{
+        font-size:1.6rem;
+        font-weight:bold;
+    }
+    .navbar{
+        margin:10px 20px;
+    }
+    .navbar nav ul{
+        display:flex;
+        gap:20px;
+        list-style-type: none;
+        justify-content: center;
+        color:#444;
+        font-size:1.6rem;
+    }
+    .navbar nav ul li a:hover{
+        color:red;
+        text-decoration: underline;
+    }
+    .main{
+        margin:30px;
+        padding:20px;
+        font-size:1.6rem;
+        display: flex;
+        gap:20px;
+        flex-wrap: wrap;
+    }
+    .aside.Features{
+        flex-grow:2;
+        padding:10px;
+    }
+    .aside.Features h4{
+        font-size:1.8rem;
+        margin-bottom:10px;
+    }
+    .aside.Features h5{
+        font-size:1.4rem;
+        margin:10px 0 5px 0;
+    }
+    .aside.Features p{
+        font-size:1.2rem;
+    }
+    .aside.Features ul{
+        font-size:1.2rem;
+        padding:10px;
+    }
+    .aside.Features ul li{
+        margin-bottom:5px;
+    }
+    .middle-section{
+        flex-grow:4;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    .middle-section .plan{
+        border:1px solid #ccc;
+        padding:10px;
+    }
+    .middle-section .plan h4{
+        font-size:1.8rem;
+        margin-bottom:10px;
+    }
+    .middle-section .plan .plan-header{
+        font-size:1.4rem;
+        font-weight:bold;
+        margin-bottom:5px;
+    }
+    .middle-section .plan .plan-price{
+        font-size:1.6rem;
+        color:#333;
+        margin-bottom:10px;
+    }
+    .middle-section .plan .plan-features ul{
+        font-size:1.2rem;
+        padding:10px;
+    }
+.middle-section .form{
+        border:1px solid #ccc;
+        padding:10px;
+    }
+    .middle-section .form h4{
+        font-size:1.8rem;
+        margin-bottom:10px;
+    }
+    .middle-section .form label{
+        font-size:1.2rem;
+    }
+    .middle-section .form input, .middle-section .form textarea{
+        font-size:1.2rem;
+        width:100%;
+        padding:8px;
+        margin:5px 0 15px 0;
+        border:1px solid #ccc;
+        border-radius:4px;
+    }
+    .middle-section .form button{
+        font-size:1.2rem;
+        padding:10px 15px;
+        background-color:#333;
+        color:#fff;
+        border:none;
+        border-radius:4px;
+        cursor:pointer;
+    }
+    .right-content{
+        flex-grow:2;
+        padding:10px;
+        border:1px solid #ccc;
+    }
+    .right-content h4{
+        font-size:1.8rem;
+        margin-bottom:10px;
+    }
+    .right-content h5{
+        font-size:1.4rem;
+        margin:10px 0;
+    }
+    .right-content img{
+        margin-top:20px;
+        border-radius:50%;
+        height:100px;
+        width:100px;
+        border:5px solid #ccc;
+        padding:3px;
+    }
+
+</style>
+<body>
+    <header>
+        <div class="topbar">
+            <div class="Title">
+                TECHAXIS SAMPLE PAGE
+            </div>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Features.html">Features</a></li>
+                    <li><a href="Pricing.html">Pricing</a></li>
+                    <li><a href="Testimonial.html">Testimonials</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <div class="FEATURES">
+            <h4>FEATURES</h4>
+            <h5>Feature heading 1</h5>
+            <p>
+                This is the description for feature heading 1.</p>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+            <h5>Feature heading 2</h5>
+            <p>
+                This is the description for feature heading 2.</p>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+            </div>
+        </aside>
+        <div class="middle-section">
+            <div class="plan">
+                <h4>PRICING PLAN</h4>
+                <div class="plan-header">
+                    Basic Plan
+                </div>
+                <div class="plan-price">
+                    $29
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="plan-header">
+                    Standard Plan
+                </div>
+                <div class="plan-price">
+                    $49
+                </div>
+                <div class="plan-features"> 
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="plan-header">
+                    Premium Plan
+                </div>
+                <div class="plan-price">
+                    $99
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                    </div>
+            </div>
+            <div class="form">
+                <h4>CONTACT US</h4>
+                <form action="/" method="post">
+                    <label for="Name">Name:</label>
+                    <input type="text" id="Name" name="Name" placeholder="Name"><br><br>
+                    <label for="Email">Email:</label>
+                    <input type="email" id="Email" name="Email" placeholder="Email"><br><br>
+                    <label for="Message">Message:</label><br>
+                    <textarea id="Message" name="Message" placeholder="Message"></textarea><br><br>
+                    <button type="Submit">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="Testimonials">
+            <h4>Testimonials</h4>
+            <i class="fa-solid fa-quote-left" style="color: #bcc4c7;" ></i>
+            <h5>This is my 1st testimonials. -John Doe</h5>
+             <i class="fa-solid fa-quote-left" style="color: #bcc4c7;" ></i>
+            <h5>This is my 1st testimonials.-John Doe</h5>
+        </div>
+        <img src="htmlcss.jpeg" height="100px" width="100px">
+    </main>
+</body> 
+</html>

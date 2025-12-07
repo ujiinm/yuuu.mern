@@ -54,27 +54,19 @@
         gap:20px;
         flex-wrap: wrap;
     }
-    .col1{
-        flex-grow: 1.5;
+    .Features{
+        flex-grow: 2;
         padding: 10px;
     }
-    .col2{
-        flex-grow: 4;
-        
-        padding: 10px;
-    }
-    .col3{
-        flex-grow:1.5;
-        
-        padding:10px;
-    }
+
+    
     section h5{
         margin:0px;
         font-size:1.4rem;
     }
     section p{
         font-size:1.2rem;
-        line-height:1.4;
+        line-height:2rem;
         margin-bottom:15px;
     }
     ul{
@@ -83,9 +75,66 @@
     li{
         font-size: 1.2rem;
         margin-bottom: 4px;
+    }
+    .plan-container{
+        display:flex;
+        gap:20px;
+        flex-wrap: wrap;
+        flex-grow:4;
 
     }
+    .plan{
+        display:flex;
+        border:1px solid #ccc;
+        padding:10px;
+        width:250px;
+        border-radius:5px;
+        background-color: white;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .plan-header{
+        text-align:center;
+        font-weight:bold;
+        font-size:1.4rem;
+        margin-bottom:0px;
+        background:#444;
+        color:white;
+    }
+    .plan-price{
+        font-size:2rem;
+        margin:10px 0;
+        text-align: center;
+        font-weight: bold;
+    }
+    .plan-features ul{
+        padding-left: 20px;
+    }
+    button{
 
+        font-size:1.2rem;
+        padding:10px;
+        margin:20px;
+        width:75%;
+        font-weight: bold;
+        background:#444;
+        color:white;
+        }
+        .Testimonials{
+            flex-grow:2;
+            border:1px solid #ccc;
+        }
+        .Testimonials ul{
+            font-size:1.2rem;
+            padding:10px;
+        }
+        .contact-us{
+            flex-grow:2;
+            border:1px solid #ccc;
+            font-size: 1.2rem;
+            margin:10px;
+            padding:10px 5px;
+        }
 </style>
 
 <body>
@@ -108,38 +157,98 @@
         </div>
     </header>
     <main class="main">
-        <div class="col1">
-            <h4>FEATURES</h4>
+        <div class="Features">
             <section>
-                <h5>Feature 1 Heading</h5>
-                <p>This is a brief description of this feature.
+                <h4>Features</h4>
+                <h5>Features Heading 1</h5>
+                <p>
+                    This the description for features heading 1.</p>
                     <ul>
                         <li>Feature 1</li>
                         <li>Feature 2</li>
-                        <li>Feature 3</li>
-                    </ul> 
-                </p>  
+                        <li>Feature 3</li>  
+                    </ul>
             </section>
-            <section>
-                <h5>Feature 2 Heading</h5>
-                <p>
-                This is a brief description of this feature.
+                    <section>
+                    <h5>Features Heading 2</h5>
+                    <p>
+                    This the description for features heading 2.</p>
                     <ul>
                         <li>Feature 1</li>
                         <li>Feature 2</li>
                         <li>Feature 3</li>
                     </ul>
-                    </p>
+            </section>
         </div>
-        <div class="col2">
-            PRICING PLANS
+        <div class="plan-container">
+            <div class="plan">
+                <div class="plan-header">
+                    Basic Plan
+                </div>
+                <div class="plan-price">
+                    $29
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                    <button type="button">Sign up</button>
+                </div>
         </div>
-        <div class="col3">
-            TESTIMONIALS
+        <div class="plan">
+                  <div class="plan-header">
+                    Standard Plan
+                    </div>
+                <div class="plan-price">
+                    $49
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                    <button type="button">Sign up</button>
+                </div>
+                  </div>
+                  <div class="plan">
+                  <div class="plan-header">
+                    Premium Plan
+                    </div>
+                <div class="plan-price">
+                    $99
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                    <button type="button">Sign up</button>
+                </div>
+                </div>
+                
+            </div>
         </div>
+        </div>
+
+        <div class="Testimonials">
+            <ul>
+                <li>
+                    "This is the 1st testimonials"-John Doe
+                </li>
+                <li>
+                    "This is the 2nd testimonials"-John Dee
+                </li>
+            </ul>
+        </div>
+        
+
+
    
     </main>
 
 </body>
-
 </html>
